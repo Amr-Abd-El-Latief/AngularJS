@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script src="angular/angular.min.js"></script>
+<script src="main.js"></script>
+
+<body>
+
+<div ng-app="myApp" >
+	<div ng-controller="myCtrl">
+		<table>
+ <tr ng-repeat="friend in friends">
+
+<td>
+	<img src="images/{{friend.name}}.png" width="100" height="100">
+</td>
+<td>
+<h3>{{friend.name}}</h3>
+<br />
+{{friend.desc}}
+ </td>
+</tr>
+
+</table>
+</div>
+</div>
+
+</body>
+</html>

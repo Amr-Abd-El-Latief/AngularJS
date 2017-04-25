@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<script src="angular/angular.min.js"></script>
+<script src="min.js"></script>
+
+<body>
+
+<div ng-app="myApp" >
+	<div ng-controller="myCtrl" >
+		Search: <input type="text" ng-model="searching" />
+		<table>
+<!--  <tr ng-repeat="friend in friends|filter:searching">
+ -->
+<tr ng-repeat="friend in friends|filter:lowercase">
+
+<td>
+	<img src="images/{{friend.name}}.png" width="100" height="100">
+</td>
+<td>
+<h3>{{friend.name}}</h3>
+<br />
+{{friend.desc}}
+ </td>
+</tr>
+
+</table>
+</div>
+</div>
+
+</body>
+</html>

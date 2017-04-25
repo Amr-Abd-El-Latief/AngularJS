@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<script src="angular/angular.min.js"></script>
+<script src="main.js"></script>
+
+<body>
+
+<div ng-app="myApp" >
+	<div ng-controller="myCtrl" >
+		<table>
+<!--  <tr ng-repeat="friend in friends|filter:searching">
+ -->
+<tr ng-repeat="item in news">
+
+<td>
+	<img src="item.PicturLink" width="100" height="100">
+</td>
+<td>
+<h3>{{item.NewsTitle}}</h3>
+
+ </td>
+</tr>
+
+</table>
+</div>
+</div>
+
+</body>
+</html>
